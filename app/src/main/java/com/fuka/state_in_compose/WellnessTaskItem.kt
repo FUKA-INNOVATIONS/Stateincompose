@@ -44,7 +44,10 @@ fun WellnessTaskItem(
     }
 }
 
-@Composable
+
+
+// Stateful composable function -> No longer needed since we have viewModel
+/*@Composable
 fun WellnessTaskItem(taskName: String, onClose: () -> Unit, modifier: Modifier = Modifier) {
     var checkedState by rememberSaveable { mutableStateOf(false) }
 
@@ -55,4 +58,4 @@ fun WellnessTaskItem(taskName: String, onClose: () -> Unit, modifier: Modifier =
         onClose = onClose,
         modifier = modifier,
     )
-}
+} */
